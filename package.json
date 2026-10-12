@@ -1,0 +1,20 @@
+{
+  "name": "payment-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma enterprise de pagamentos, contas, ledger, conciliacao e liquidacao.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@payments/api",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
+
