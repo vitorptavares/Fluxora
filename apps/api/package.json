@@ -7,7 +7,9 @@
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
     "test": "node --test",
-    "typecheck": "node --check src/server.js"
+    "typecheck": "node ../../scripts/check-syntax.mjs src test"
+  },
+  "dependencies": {
+    "@payments/domain": "0.1.0"
   }
 }
-

@@ -10,6 +10,9 @@ O repositorio contem a fundacao do primeiro ciclo de desenvolvimento:
 
 - API HTTP executavel sem dependencias externas;
 - endpoint de saude e metadados do servico;
+- cadastro de clientes e estabelecimentos, com validacao de CPF/CNPJ
+  (inclusive CNPJ alfanumerico), segregacao por tenant e idempotencia
+  ([documentacao](docs/api/onboarding.md));
 - separacao inicial dos dominios da plataforma;
 - decisoes arquiteturais registradas;
 - roadmap de desenvolvimento de 12 meses;
@@ -39,6 +42,7 @@ curl http://localhost:3000/v1
 ```text
 apps/api/              API publica e administrativa
 packages/domain/       Regras e tipos centrais de negocio
+docs/api/              Contratos da API publica
 docs/architecture/     Arquitetura e decisoes tecnicas
 docs/roadmap/          Plano de desenvolvimento
 infra/                 Infraestrutura como codigo (proximos ciclos)
