@@ -20,3 +20,32 @@ export function createMoney(amount, currency = "BRL") {
   return Object.freeze({ amount, currency });
 }
 
+export {
+  ConflictError,
+  DomainError,
+  NotFoundError,
+  ValidationError
+} from "./errors.js";
+
+export {
+  documentTypes,
+  isValidCnpj,
+  isValidCpf,
+  normalizeDocument,
+  parseDocument
+} from "./onboarding/documents.js";
+
+export {
+  createCustomer,
+  customerStatuses,
+  customerTypes,
+  getCustomer,
+  registerCustomer
+} from "./onboarding/customers.js";
+
+export {
+  createEstablishment,
+  establishmentStatuses,
+  getEstablishment,
+  registerEstablishment
+} from "./onboarding/establishments.js";
