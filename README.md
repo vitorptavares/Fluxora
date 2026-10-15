@@ -9,8 +9,11 @@ chargebacks.
 O repositorio contem a fundacao do primeiro ciclo de desenvolvimento:
 
 - API HTTP executavel sem dependencias externas;
+- endpoints de clientes, estabelecimentos, usuarios e permissoes;
+- cadastro protegido de contas bancarias;
+- configuracao de Pix, cartao e boleto;
+- credenciais de API com rotacao e revogacao;
 - endpoint de saude e metadados do servico;
-- separacao inicial dos dominios da plataforma;
 - decisoes arquiteturais registradas;
 - roadmap de desenvolvimento de 12 meses;
 - configuracao de integracao continua.
@@ -54,5 +57,7 @@ infra/                 Infraestrutura como codigo (proximos ciclos)
 - nenhuma integracao externa invade o dominio central diretamente.
 
 Consulte [a arquitetura](docs/architecture/overview.md) e o
-[roadmap de 12 meses](docs/roadmap/12-month-plan.md).
+[roadmap de 12 meses](docs/roadmap/12-month-plan.md). O guia de
+[cadastro e contas](docs/registration-and-accounts.md) documenta os endpoints,
+o bootstrap do primeiro usuario e exemplos de verificacao.
 

@@ -20,3 +20,6 @@ export function createMoney(amount, currency = "BRL") {
   return Object.freeze({ amount, currency });
 }
 
+export * from "./errors.js";
+export * from "./registry.js";
+

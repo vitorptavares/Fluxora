@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "dependencies": {
+    "@payments/domain": "0.1.0"
+  },
   "scripts": {
-    "dev": "node --watch src/server.js",
+    "dev": "node src/server.js",
+    "dev:watch": "node --watch src/server.js",
     "start": "node src/server.js",
     "test": "node --test",
     "typecheck": "node --check src/server.js"
